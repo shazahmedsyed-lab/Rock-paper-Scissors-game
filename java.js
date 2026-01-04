@@ -35,6 +35,7 @@ rock.addEventListener("click",()=>{
         msg.innerText = "Game was Drawn";
         res.innerText = "Comp chose Rock";
         msg.style.backgroundColor = "grey";
+        res.style.backgroundColor = "grey";
     }
 
     else if(compchoice=="paper"){
@@ -44,6 +45,8 @@ rock.addEventListener("click",()=>{
         comscore1.innerText = comscore;
         res.innerText = "Comp chose Paper";
         msg.style.backgroundColor = "red";
+        res.style.backgroundColor = "white";
+        res.style.color = "black";
     }
 
     else if(compchoice=="scissors"){
@@ -53,6 +56,7 @@ rock.addEventListener("click",()=>{
         userscore++;
         userscore1.innerText = userscore;
         msg.style.backgroundColor = "green";
+        res.style.backgroundColor = "pink";
     }
 
 })
@@ -76,6 +80,8 @@ paper.addEventListener("click",()=>{
         msg.innerText = "Game was Drawn";
         res.innerText = "Comp chose Paper";
         msg.style.backgroundColor = "grey";
+        res.style.backgroundColor = "white";
+        res.style.color = "black";
 
     }
 
@@ -86,15 +92,18 @@ paper.addEventListener("click",()=>{
         comscore++;
         comscore1.innerText = comscore;
         msg.style.backgroundColor = "red";
+        res.style.backgroundColor = "pink";
     }
 
     else if(compchoice=="rock"){
         console.log("You win!");
         msg.innerText = "You win";
         res.innerText = "Comp chose Rock";
+
         userscore++;
         userscore1.innerText = userscore;
         msg.style.backgroundColor = "green";
+        res.style.backgroundColor = "grey";
     }
 
 })
@@ -113,6 +122,7 @@ scissors.addEventListener("click",()=>{
         msg.innerText = "Game was Drawn";
         res.innerText = "Comp chose Scissors";
         msg.style.backgroundColor = "grey";
+        res.style.backgroundColor = "pink";
     }
 
     else if(compchoice=="rock"){
@@ -122,6 +132,7 @@ scissors.addEventListener("click",()=>{
         comscore++;
         comscore1.innerText = comscore;
         msg.style.backgroundColor = "red";
+        res.style.backgroundColor = "grey";
     }
 
     else if(compchoice=="paper"){
@@ -132,6 +143,8 @@ scissors.addEventListener("click",()=>{
         userscore++;
         userscore1.innerText = userscore;
         msg.style.backgroundColor = "green";
+        res.style.backgroundColor = "white";
+        res.style.color = "black";
     }
 
 
